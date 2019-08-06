@@ -66,7 +66,7 @@ def add_cards():
     db.session.add(record)
     db.session.commit()
 
-    return jsonify("card Posted!")
+    return jsonify("Card Posted!")
 
 
 @app.route("/card/<id>", methods=["PUT"])
