@@ -88,7 +88,7 @@ def update_card(id):
 
 @app.route("/card/<id>", methods=["DELETE"])
 def delete_card(id):
-    record = card.query.get(id)
+    record = Card.query.get(id)
     db.session.delete(record)
 
     db.session.commit()
